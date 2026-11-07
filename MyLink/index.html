@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ec">
+  <meta name="description" content="dmdkr12의 개발 책갈피. GitHub 프로필과 웹 개발 실습에 쓰는 자료를 모았습니다.">
+  <title>MyLink · dmdkr12의 개발 책갈피</title>
+  <style>
+    *{box-sizing:border-box}
+    :root{color-scheme:light;--paper:#f5f3ec;--ink:#173f36;--quiet:#52685e;--line:#c9cfc1;--gold:#ffe297}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+    main{width:min(calc(100% - 32px),480px);margin:clamp(24px,6vh,68px) auto 36px}
+    .mast,.kicker,.num,.folio{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+    .mast{display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:12px;font-size:12px}
+    .wordmark{font:750 20px Georgia,serif;letter-spacing:-.7px}.mark{font-weight:700;letter-spacing:.06em}
+    .cover{position:relative;isolation:isolate;overflow:hidden;margin:17px 0 27px;padding:30px 28px;background:var(--ink);color:#fff9eb;border-radius:3px 18px 3px 3px}
+    .cover:before{content:"";position:absolute;inset:0;z-index:-1;background-image:radial-gradient(#ffffff24 .85px,transparent .85px);background-size:9px 9px;mask-image:linear-gradient(to left,#000,transparent 72%)}
+    .kicker{margin:0;color:var(--gold);letter-spacing:.16em;font-weight:700;font-size:11px}
+    .seal{display:block;margin:22px 0 14px;width:64px;height:64px}
+    h1{font-size:clamp(29px,6vw,38px);letter-spacing:-.065em;line-height:1.15;margin:0}
+    .intro{margin:11px 0 0;font-size:15px;line-height:1.65;color:#e3ece1;word-break:keep-all}
+    .ribbon{position:absolute;top:0;right:31px;width:23px;height:51px;background:var(--gold);clip-path:polygon(0 0,100% 0,100% 100%,50% 78%,0 100%)}
+    .titlebar{display:flex;align-items:baseline;justify-content:space-between;margin:0 2px 10px}
+    h2{font-size:17px;margin:0;letter-spacing:-.04em}.num,.folio{color:var(--quiet);font-size:12px}
+    ol{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+    li{border-bottom:1px solid var(--line)}
+    a{display:grid;grid-template-columns:28px 1fr 32px;align-items:center;gap:8px;padding:15px 4px;color:var(--ink);text-decoration:none}
+    a:hover{background:#e8eddf}a:focus-visible{outline:3px solid #b34c0c;outline-offset:1px;border-radius:3px}
+    .linkname,.hint{display:block}.linkname{font-size:17px;font-weight:740;letter-spacing:-.035em}.hint{color:var(--quiet);font-size:13px;margin-top:3px}
+    .arrow{display:grid;place-items:center;width:29px;height:29px;border-radius:50%;border:1px solid var(--line);font:18px Arial,sans-serif}a:hover .arrow{background:var(--gold);border-color:var(--ink)}
+    .folio{display:flex;justify-content:space-between;gap:10px;padding:18px 2px}
+    @media(max-width:380px){.cover{padding:25px 20px}.intro{font-size:14px}}
+  </style>
+</head>
+<body>
+  <main>
+    <header class="mast"><span class="wordmark">MyLink.</span><span class="mark">@dmdkr12</span></header>
+    <section class="cover" aria-labelledby="profile-title">
+      <span class="ribbon" aria-hidden="true"></span>
+      <p class="kicker" lang="en">FIELD NOTES / VOL. 01</p>
+      <svg class="seal" aria-hidden="true" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="31" fill="#ffe297"/><circle cx="32" cy="32" r="26.5" stroke="#173f36" stroke-dasharray="1.2 3"/><g stroke="#173f36" stroke-width="2" stroke-linejoin="round"><path d="M16 24q9-3 16 2 7-5 16-2v18q-9-3-16 2-7-5-16-2z"/><path d="M32 26v18M21 29q5-1 8 1M21 34q5-1 8 1M37 30l6-1M37 35l6-1"/></g></svg>
+      <h1 id="profile-title">개발 책갈피</h1>
+      <p class="intro">코드를 올리고, 화면을 만들고, 막힌 곳을 찾아볼 때<br>다시 펼치는 링크들이에요.</p>
+    </section>
+    <nav aria-labelledby="links-title">
+      <div class="titlebar"><h2 id="links-title">나의 링크</h2><span class="num">03 LINKS</span></div>
+      <ol>
+        <li><a href="https://github.com/dmdkr12"><span class="num" aria-hidden="true">01</span><span><span class="linkname">내 GitHub</span><span class="hint">프로젝트와 코드 기록</span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://nextjs.org/docs"><span class="num" aria-hidden="true">02</span><span><span class="linkname">Next.js 문서</span><span class="hint">페이지와 라우팅을 만드는 법</span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://github.com/google-gemini/gemini-cli"><span class="num" aria-hidden="true">03</span><span><span class="linkname">Gemini CLI</span><span class="hint">터미널 실습을 위한 설치 안내와 예제</span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
+      </ol>
+    </nav>
+    <footer class="folio"><span>dmdkr12 / MyLink</span><span>01 — 03</span></footer>
+  </main>
+</body>
+</html>
